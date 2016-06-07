@@ -16,7 +16,7 @@ This is a high level overview of items that we want to complete in Chat implemen
 * Group/ Channel chat) [#3](https://github.com/10pearls/Chat-Backend/issues/3)
 * Contact sharing )[#4](https://github.com/10pearls/Chat-Backend/issues/4)
 * APN support [#5](https://github.com/10pearls/Chat-Backend/issues/5)
-* Images upload
-* Video upload
-* Screen Sharing
-* Audio Chat
+* Images upload )[#7](https://github.com/10pearls/Chat-Backend/issues/7)
+* Video upload) [#8](https://github.com/10pearls/Chat-Backend/issues/8)
+* Screen Sharing )[#9](https://github.com/10pearls/Chat-Backend/issues/9)
+* Audio Chat )[#10](https://github.com/10pearls/Chat-Backend/issues/10)
