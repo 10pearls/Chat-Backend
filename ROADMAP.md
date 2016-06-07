@@ -11,7 +11,7 @@ This is a high level overview of items that we want to complete in Chat implemen
 
 ## Features
 
-* Socket support (Socket.io)
+* Socket support (Socket.io) [#1](https://github.com/10pearls/Chat-Backend/issues/1)
 * Text messages support (NOT SMS)
 * Group/ Channel chat
 * Contact sharing
