@@ -10,12 +10,12 @@ This is a high level overview of items that we want to complete in Chat implemen
 * Layout methodology `How chat system integrates with other systems`
 
 ## Features
-
+* Multi-Tenancy support [#6]()[#2](https://github.com/10pearls/Chat-Backend/issues/6)
 * Socket support (Socket.io) [#1](https://github.com/10pearls/Chat-Backend/issues/1)
-* Text messages support (NOT SMS)
-* Group/ Channel chat
-* Contact sharing
-* APN support
+* Text messages support (NOT SMS)[#2](https://github.com/10pearls/Chat-Backend/issues/2)
+* Group/ Channel chat) [#3](https://github.com/10pearls/Chat-Backend/issues/3)
+* Contact sharing )[#4](https://github.com/10pearls/Chat-Backend/issues/4)
+* APN support [#5])(https://github.com/10pearls/Chat-Backend/issues/5)
 * Images upload
 * Video upload
 * Screen Sharing
