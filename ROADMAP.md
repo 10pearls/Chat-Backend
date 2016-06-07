@@ -13,6 +13,7 @@ This is a high level overview of items that we want to complete in Chat implemen
 * Socket support (Socket.io)
 * Text messages support (NOT SMS)
 * Group/ Channel chat
+* Contact sharing
 * APN support
 * Images upload
 * Video upload
