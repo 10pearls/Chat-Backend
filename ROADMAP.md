@@ -7,6 +7,7 @@ This is a high level overview of items that we want to complete in Chat implemen
 * Create Model Diagram (Includes `Mongodb` documents/ tables).
 * Create initial file structure.
 * Extract generalized code out from our current chat implemented projects.
+* Layout methodology `How chat system integrates with other systems`
 
 ## Features
 
