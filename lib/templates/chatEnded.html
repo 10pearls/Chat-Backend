@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<p>Your chat session for the following question has come to an end.</p>
+<p><strong><%= content %></strong></p>
+<p>Following is the list of gurus who participated in the chat.</p>
+<div>
+  <% for(var i=0; i < advisors.length; i++) { %>
+  <p><%= advisors[i].fullName || advisors[i].turtleIdentifier %></p>
+  <% } %>
+</div>
+<p>
+  Hopefully your selected Gurus have lent their experiences and expertise to your question in a way that helps you to make a better decision.
+  Please visit the following link to rate the participating Gurus and let them know what you think.
+</p>
+<p>
+  <a href="<%= appURL %>/#/dashboard/chat/group/<%= chatId %>">
+    <%= appURL %>/#/dashboard/chat/group/<%= chatId %>
+  </a>
+</p>
+</body>
+</html>

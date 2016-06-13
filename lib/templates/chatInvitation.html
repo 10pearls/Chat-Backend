@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>You have been invited for a chat for a question: </p>
+<p><b><%= content %></b></p>
+<p>If you are already signed in, you can click on the link below to be taken directly to the chat. If not, you can sign-in to chat.</p>
+
+<p>
+  <a href="<%= appURL %>/#/dashboard/chat/group/<%= chatId %>">
+    <%= appURL %>/#/dashboard/chat/group/<%= chatId %>
+  </a>
+</p>
+</body>
+</html>

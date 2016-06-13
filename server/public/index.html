@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <title>Socket.IO chat</title>
+  <style>
+    body { font: 13px Helvetica, Arial; }
+    input, button { padding: 5px;}
+    #messages { list-style-type: none; margin: 0; padding: 0; }
+    #messages li { padding: 5px 10px; }
+    #messages li:nth-child(odd) { background: #eee; }
+  </style>
+</head>
+<body>
+<div>
+  <h1>Socket ID: <div id="socketId">Not connected</div></h1>
+  <h2>Register</h2>
+  <input id="txtUserToken" placeholder="Token" />
+  <button id="btnRegister">Register</button>
+
+  <h2>Chat Message</h2>
+  <input id="txtChatObj" placeholder="Chat Message JSON Object" />
+  <button id="btnRead">Mark as Read</button>
+
+  <h2>Logs</h2>
+  <ul id="messages"></ul>
+</div>
+
+</body>
+</html>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+  var socket = io();
+
+  socket.on('connect', function () {
+    $("#socketId").html(socket.id);
+  });
+
+  $("#btnRegister").on("click", function () {
+    var token = $("#txtUserToken").val();
+    if(!token){
+      alert("Please enter Token");
+      return;
+    }
+    socket.emit('register', {token: token});
+  });
+
+  $("#btnRead").on("click", function () {
+    var chatMessage = $("#txtChatObj").val();
+    if(!chatMessage){
+      alert("Please enter Chat Message JSON Object");
+      return;
+    }
+
+    try {
+      chatMessage = JSON.parse(chatMessage);
+    } catch(err) {
+      alert('Invalid JSON');
+      return;
+    }
+    socket.emit('readChatMessage', chatMessage);
+  });
+
+  log('profileUpdated');
+  log('questionReceived');
+  log('answerReceived');
+  log('chatInvitation');
+  log('chatMessageReceived');
+  log('chatEnded');
+  log('emitError');
+  log('connect');
+  log('disconnect');
+
+  function log(event) {
+    socket.on(event, function (data) {
+      $('#messages').append($('<li>').html('<b>' + event + ':</b> ' + JSON.stringify(data)));
+    });
+  }
+</script>

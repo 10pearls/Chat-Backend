@@ -1,0 +1,46 @@
+{
+  "name": "10Pearls-ChatBackend",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+
+    "apn": "^1.7.5",
+    "bunyan": "^1.5.1",
+    "bunyan-loggly": "^1.0.0",
+    "convict": "^1.0.2",
+    "ejs": "^2.4.1",
+    "es6-promisify": "^3.0.0",
+    "ioredis": "^1.15.1",
+    "jsonwebtoken": "^5.4.1",
+    "lodash": "~3.10.1",
+    "method-override": "~2.3.5",
+    "moment": "~2.10.6",
+    "mongoose": "^4.2.6",
+    "mongoose-timestamp": "git+https://github.com/saadullah-aleem-10p/mongoose-timestamp.git",
+    "mongoose-unique-validator": "^0.6.1",
+    "nodemailer": "^2.3.0",
+    "request": "^2.61.0",
+    "restify": "~4.0.3",
+    "revalidator": "git+https://git@github.com/ali-yousuf-10p/revalidator.git",
+    "socket.io": "~1.4.4",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "abracadabra": "^0.1.3",
+    "eslint": "^1.10.3",
+    "chai": "^1.7.0",
+    "chai-as-promised": "~4.1.0",
+    "mocha": "^2.2.5",
+    "nodemon": "^1.9.1",
+    "sinon": "^1.15.4",
+    "sinon-as-promised": "^4.0.0"
+  },
+  "scripts": {
+    //"test": "mocha lib/tests/unit/ --timeout=15000 -R spec",
+    "start": "nodemon server/server.js --ignore '*/logs' | bunyan",
+    "lint": "eslint server/ lib/ "
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
