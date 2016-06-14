@@ -7,6 +7,7 @@ This is a high level overview of items that we want to complete in Chat implemen
 * Create Model Diagram (Includes `Mongodb` documents/ tables).[#11](https://github.com/10pearls/Chat-Backend/issues/11)
 * Create initial file structure. [#12](https://github.com/10pearls/Chat-Backend/issues/12)
 * Extract generalized code out from our current chat implemented projects.[#13](https://github.com/10pearls/Chat-Backend/issues/13)
+* Identify chat socket events [#15](https://github.com/10pearls/Chat-Backend/issues/15)
 * Layout methodology `How chat system integrates with other systems`[#14](https://github.com/10pearls/Chat-Backend/issues/14)
 
 ## Features
